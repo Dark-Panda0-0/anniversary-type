@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>For My Favorite Person</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Floating hearts background -->
+  <div class="hearts" aria-hidden="true">
+    <span class="heart h1"></span>
+    <span class="heart h2"></span>
+    <span class="heart h3"></span>
+    <span class="heart h4"></span>
+    <span class="heart h5"></span>
+    <span class="heart h6"></span>
+  </div>
+
+  <main class="stage">
+    <section class="browser">
+      <header class="browser__top">
+        <div class="dots">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <div class="tab">To the boss Maisha Mam</div>
+      </header>
+
+      <div class="browser__content">
+        <!-- LEFT: photos -->
+        <aside class="left">
+          <figure class="polaroid tilt1">
+            <div class="pin"></div>
+            <img src="assets/photo1.jpg" alt="Memory photo 1" />
+          </figure>
+
+          <figure class="polaroid tilt2">
+            <div class="pin"></div>
+            <img src="assets/photo2.jpg" alt="Memory photo 2" />
+          </figure>
+
+          <figure class="polaroid tilt3">
+            <div class="pin"></div>
+            <img src="assets/photo3.jpg" alt="Memory photo 3" />
+          </figure>
+        </aside>
+
+        <!-- CENTER: message -->
+        <section class="center">
+          <div class="center__heart" aria-hidden="true"></div>
+
+          <h1 class="title">Happy half-half Anniversary, Baby🤍</h1>
+          <p class="msg">
+Another year with you, and I still feel lucky every day.
+Thank you for loving me, choosing me, and staying with me.
+I’ll always be proud that it’s you. ur mine and am urs.
+          </p>
+
+          <button class="cta" id="surpriseBtn" type="button">
+            Click for a Surprise
+          </button>
+
+          <p class="small">
+            You’re my gulumulu bou , my calmness, and my favorite.
+          </p>
+        </section>
+
+        <!-- RIGHT: bouquet -->
+        <aside class="right">
+          <img class="bouquet" src="assets/flowers.png" alt="Bouquet" />
+          <div class="tiny-heart" aria-hidden="true">♥</div>
+        </aside>
+
+        <!-- Bottom music player -->
+        <footer class="player">
+          <button class="like" id="likeBtn" aria-label="Like">
+            ♥
+          </button>
+
+          <div class="player__main">
+            <input id="progress" class="progress" type="range" min="0" max="100" value="0" />
+            <div class="player__row">
+              <button id="playBtn" class="play" type="button" aria-label="Play/Pause">
+                ▶
+              </button>
+              <div class="now">
+                <div class="now__label">Now Playing:</div>
+                <div class="now__song" id="songTitle">wanna listen something Baby🤍</div>
+              </div>
+              <div class="time" id="timeText">0:00 / 0:00</div>
+            </div>
+          </div>
+
+          <button class="heart-outline" id="heartOutlineBtn" aria-label="Heart">
+            ♡
+          </button>
+
+          <!-- Audio (replace with your mp3) -->
+<audio id="audio" preload="metadata">
+  <source src="assets/song.mp3" type="audio/mpeg" />
+</audio>
+
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <!-- Surprise Modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <h2 id="modalTitle">vauuuuuuuuu Surprise! 👻</h2>
+      <p>
+        I’m so grateful for you. Your are my one and only gulumulu bouuuu 😭. i have many things to say but  idk where to start  but im gonna just say.
+        <br />I love you (a lot).
+      </p>
+
+      <div class="modal__actions">
+        <button class="modal__btn" id="confettiBtn" type="button">More Hearts</button>
+        <button class="modal__btn ghost" id="closeModalBtn" type="button">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
